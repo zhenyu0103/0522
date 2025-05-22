@@ -1,0 +1,239 @@
+/* 全域樣式 */
+:root {
+    --primary-color: #004B97;
+    --secondary-color: #FFB800;
+}
+
+body {
+    font-family: "Microsoft JhengHei", "微軟正黑體", sans-serif;
+}
+
+/* 頂部快速連結 */
+.top-links {
+    border-bottom: 1px solid #eee;
+}
+
+.top-links a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.top-links a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* 導航欄樣式 */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    padding: 1rem 1.2rem !important;
+    transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--primary-color) !important;
+    background-color: rgba(0,0,0,0.03);
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dropdown-item {
+    padding: 0.7rem 1.2rem;
+    transition: all 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* 輪播圖樣式 */
+.hero-slider {
+    height: 500px;
+}
+
+.hero-slider img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white !important;
+    background: rgba(0,0,0,0.3);
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--primary-color) !important;
+}
+
+/* 最新消息區塊 */
+.news-tabs .nav-link {
+    color: #666;
+    font-weight: 500;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.3s;
+}
+
+.news-tabs .nav-link.active {
+    color: white !important;
+    background-color: var(--primary-color);
+}
+
+.news-tabs .nav-link:hover:not(.active) {
+    color: var(--primary-color);
+    background-color: rgba(0,0,0,0.03);
+}
+
+.list-group-item {
+    border-left: none;
+    border-right: none;
+    transition: all 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+.quick-links {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.quick-links h4 {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.quick-links a {
+    color: #444;
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem 0;
+    transition: all 0.3s;
+    border-bottom: 1px solid #eee;
+}
+
+.quick-links a:last-child {
+    border-bottom: none;
+}
+
+.quick-links a:hover {
+    color: var(--primary-color);
+    padding-left: 10px;
+}
+
+.quick-links i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+/* 校園花絮卡片 */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: none;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* 頁尾樣式 */
+footer {
+    background-color: var(--primary-color) !important;
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+
+footer a {
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--secondary-color) !important;
+    text-decoration: none;
+}
+
+/* RWD 響應式設計 */
+@media (max-width: 768px) {
+    .hero-slider,
+    .hero-slider img {
+        height: 300px;
+    }
+
+    .quick-links {
+        margin-top: 20px;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem !important;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+    }
+}

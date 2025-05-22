@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺南市立家齊高級中學</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 頂部快速連結 -->
+    <div class="top-links bg-light py-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <small>
+                        <a href="#" class="text-secondary me-3"><i class="fas fa-envelope"></i> 校務信箱</a>
+                        <a href="#" class="text-secondary me-3"><i class="fas fa-calendar"></i> 行事曆</a>
+                        <a href="#" class="text-secondary me-3"><i class="fas fa-phone"></i> 分機表</a>
+                    </small>
+                </div>
+                <div class="col-md-4 text-end">
+                    <small>
+                        <a href="#" class="text-secondary me-3">English</a>
+                        <a href="#" class="text-secondary">網站地圖</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="家齊高中校徽" height="50">
+                臺南市立家齊高級中學
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">認識家齊</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">學校簡介</a></li>
+                            <li><a class="dropdown-item" href="#">校史沿革</a></li>
+                            <li><a class="dropdown-item" href="#">未來發展</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">行政單位</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">教務處</a></li>
+                            <li><a class="dropdown-item" href="#">學務處</a></li>
+                            <li><a class="dropdown-item" href="#">輔導處</a></li>
+                            <li><a class="dropdown-item" href="#">總務處</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">校園專區</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">學生專區</a></li>
+                            <li><a class="dropdown-item" href="#">教師專區</a></li>
+                            <li><a class="dropdown-item" href="#">家長專區</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">升學資訊</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">國際教育</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 輪播圖 -->
+    <div class="swiper hero-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/slide1.jpg" class="w-100" alt="校園照片">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/slide2.jpg" class="w-100" alt="活動照片">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/slide3.jpg" class="w-100" alt="學生活動">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- 最新消息區 -->
+    <section id="news" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">最新消息</h2>
+            <!-- 搜尋欄 -->
+            <div class="row mb-4">
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        <input type="text" class="form-control search-input" placeholder="搜尋最新消息...">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="news-tabs">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#announcement">公告</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#competition">競賽</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#study">研習</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#entrance">升學</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-3">
+                            <div class="tab-pane fade show active" id="announcement">
+                                <!-- 公告內容將由 JavaScript 動態載入 -->
+                            </div>
+                            <div class="tab-pane fade" id="competition">
+                                <!-- 競賽內容將由 JavaScript 動態載入 -->
+                            </div>
+                            <div class="tab-pane fade" id="study">
+                                <!-- 研習內容將由 JavaScript 動態載入 -->
+                            </div>
+                            <div class="tab-pane fade" id="entrance">
+                                <!-- 升學內容將由 JavaScript 動態載入 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="quick-links p-3 bg-light rounded">
+                        <h4>校務服務</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fas fa-user-graduate"></i> 學生資料查詢</a></li>
+                            <li><a href="#"><i class="fas fa-book"></i> 夜自習K館登記</a></li>
+                            <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> 教師課表查詢</a></li>
+                            <li><a href="#"><i class="fas fa-calendar-check"></i> 場地借用系統</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 校園花絮 -->
+    <section id="gallery" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">校園花絮</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100" data-aos="fade-up">
+                        <img src="images/gallery1.jpg" class="card-img-top" alt="國際交流">
+                        <div class="card-body">
+                            <h5 class="card-title">國際交流活動</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/gallery2.jpg" class="card-img-top" alt="特色課程">
+                        <div class="card-body">
+                            <h5 class="card-title">特色課程活動</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/gallery3.jpg" class="card-img-top" alt="學生表演">
+                        <div class="card-body">
+                            <h5 class="card-title">學生活動表演</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100" data-aos="fade-up" data-aos-delay="300">
+                        <img src="images/gallery4.jpg" class="card-img-top" alt="時光走廊">
+                        <div class="card-body">
+                            <h5 class="card-title">時光走廊</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>聯絡資訊</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 地址：台南市民生路2段326號<br>
+                        <i class="fas fa-phone"></i> 電話：06-7223534<br>
+                        <i class="fas fa-fax"></i> 傳真：06-7223544<br>
+                        <i class="fas fa-envelope"></i> 信箱：ccsh@ccsh.tn.edu.tw
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h5>相關連結</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">網站地圖</a></li>
+                        <li><a href="#" class="text-light">隱私權政策</a></li>
+                        <li><a href="#" class="text-light">資訊安全政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="mb-0">© 2025 臺南市立家齊高級中學 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
