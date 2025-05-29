@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校園專區 - 臺南市立家齊高級中學</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 頂部快速連結 -->
+    <div class="top-links bg-light py-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <small>
+                        <a href="#" class="text-secondary me-3"><i class="fas fa-envelope"></i> 校務信箱</a>
+                        <a href="#" class="text-secondary me-3"><i class="fas fa-calendar"></i> 行事曆</a>
+                        <a href="#" class="text-secondary me-3"><i class="fas fa-phone"></i> 分機表</a>
+                    </small>
+                </div>
+                <div class="col-md-4 text-end">
+                    <small>
+                        <a href="#" class="text-secondary me-3">English</a>
+                        <a href="#" class="text-secondary">網站地圖</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="家齊高中校徽" height="50">
+                臺南市立家齊高級中學
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html">認識家齊</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html#school-intro">學校簡介</a></li>
+                            <li><a class="dropdown-item" href="about.html#school-history">校史沿革</a></li>
+                            <li><a class="dropdown-item" href="about.html#future-dev">未來發展</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="administrative.html">行政單位</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="administrative.html#academic-affairs">教務處</a></li>
+                            <li><a class="dropdown-item" href="administrative.html#student-affairs">學務處</a></li>
+                            <li><a class="dropdown-item" href="administrative.html#counseling">輔導處</a></li>
+                            <li><a class="dropdown-item" href="administrative.html#general-affairs">總務處</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">校園專區</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#student-zone">學生專區</a></li>
+                            <li><a class="dropdown-item" href="#teacher-zone">教師專區</a></li>
+                            <li><a class="dropdown-item" href="#parent-zone">家長專區</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">升學資訊</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">國際教育</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 頁面標題 -->
+    <div class="bg-primary text-white py-4">
+        <div class="container">
+            <h1 class="mb-0">校園專區</h1>
+        </div>
+    </div>
+
+    <!-- 主要內容 -->
+    <main class="py-5">
+        <div class="container">
+            <!-- 學生專區 -->
+            <section id="student-zone" class="mb-5" data-aos="fade-up">
+                <div class="zone-header student-zone-header">
+                    <h2><i class="fas fa-user-graduate"></i> 學生專區</h2>
+                    <p class="lead">提供學生學習、生活、活動等相關資訊與服務</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <h4>數位學習平台</h4>
+                            <p>提供線上課程、教材下載、作業繳交等服務</p>
+                            <a href="#" class="btn btn-outline-primary">進入平台</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h4>圖書資訊</h4>
+                            <p>查詢圖書館藏、預約借書、線上資料庫</p>
+                            <a href="#" class="btn btn-outline-primary">查詢系統</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <h4>社團活動</h4>
+                            <p>社團介紹、活動報名、成果展示</p>
+                            <a href="#" class="btn btn-outline-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 教師專區 -->
+            <section id="teacher-zone" class="mb-5" data-aos="fade-up">
+                <div class="zone-header teacher-zone-header">
+                    <h2><i class="fas fa-chalkboard-teacher"></i> 教師專區</h2>
+                    <p class="lead">提供教師教學、研究、行政等相關資源</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h4>教學資源</h4>
+                            <p>教材分享、教案下載、教學媒體</p>
+                            <a href="#" class="btn btn-outline-primary">資源中心</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>教師社群</h4>
+                            <p>專業成長、教學研討、經驗分享</p>
+                            <a href="#" class="btn btn-outline-primary">加入社群</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h4>行政事務</h4>
+                            <p>差勤系統、會議記錄、表單下載</p>
+                            <a href="#" class="btn btn-outline-primary">前往處理</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 家長專區 -->
+            <section id="parent-zone" class="mb-5" data-aos="fade-up">
+                <div class="zone-header parent-zone-header">
+                    <h2><i class="fas fa-home"></i> 家長專區</h2>
+                    <p class="lead">提供家長了解學校資訊與參與校務管道</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h4>最新公告</h4>
+                            <p>學校重要訊息、活動通知、政策宣導</p>
+                            <a href="#" class="btn btn-outline-primary">查看公告</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h4>家長會</h4>
+                            <p>組織架構、活動記錄、意見反映</p>
+                            <a href="#" class="btn btn-outline-primary">了解更多</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>學習成果</h4>
+                            <p>成績查詢、學習歷程、升學統計</p>
+                            <a href="#" class="btn btn-outline-primary">查看資料</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>聯絡資訊</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 地址：台南市民生路2段326號<br>
+                        <i class="fas fa-phone"></i> 電話：06-7223534<br>
+                        <i class="fas fa-fax"></i> 傳真：06-7223544<br>
+                        <i class="fas fa-envelope"></i> 信箱：ccsh@ccsh.tn.edu.tw
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h5>相關連結</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">網站地圖</a></li>
+                        <li><a href="#" class="text-light">隱私權政策</a></li>
+                        <li><a href="#" class="text-light">資訊安全政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="mb-0">© 2025 臺南市立家齊高級中學 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

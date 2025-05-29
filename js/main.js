@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 初始化 AOS 動畫
     AOS.init({
-        duration: 1000,
+        duration: 800,
+        offset: 100,
         once: true
     });
 

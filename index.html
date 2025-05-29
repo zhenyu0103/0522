@@ -99,61 +99,33 @@
         <div class="swiper-button-prev"></div>
     </div>
 
-    <!-- 最新消息區 -->
-    <section id="news" class="py-5">
+    <!-- 最新消息 -->
+    <section class="news-section py-5">
         <div class="container">
-            <h2 class="text-center mb-4" data-aos="fade-up">最新消息</h2>
-            <!-- 搜尋欄 -->
-            <div class="row mb-4">
-                <div class="col-md-8">
-                    <div class="input-group">
-                        <span class="input-group-text"><i class="fas fa-search"></i></span>
-                        <input type="text" class="form-control search-input" placeholder="搜尋最新消息...">
-                    </div>
-                </div>
-            </div>
+            <h2 class="section-title" data-aos="fade-up">最新消息</h2>
             <div class="row">
-                <div class="col-md-8">
-                    <div class="news-tabs">
-                        <ul class="nav nav-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-bs-toggle="tab" href="#announcement">公告</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#competition">競賽</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#study">研習</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#entrance">升學</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content mt-3">
-                            <div class="tab-pane fade show active" id="announcement">
-                                <!-- 公告內容將由 JavaScript 動態載入 -->
-                            </div>
-                            <div class="tab-pane fade" id="competition">
-                                <!-- 競賽內容將由 JavaScript 動態載入 -->
-                            </div>
-                            <div class="tab-pane fade" id="study">
-                                <!-- 研習內容將由 JavaScript 動態載入 -->
-                            </div>
-                            <div class="tab-pane fade" id="entrance">
-                                <!-- 升學內容將由 JavaScript 動態載入 -->
-                            </div>
-                        </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="news-card">
+                        <div class="news-date">2025/05/29</div>
+                        <h3>109學年度新生報到注意事項</h3>
+                        <p>請新生家長留意報到時間及應備文件...</p>
+                        <a href="#" class="btn btn-outline-primary">詳細內容</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="quick-links p-3 bg-light rounded">
-                        <h4>校務服務</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#"><i class="fas fa-user-graduate"></i> 學生資料查詢</a></li>
-                            <li><a href="#"><i class="fas fa-book"></i> 夜自習K館登記</a></li>
-                            <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> 教師課表查詢</a></li>
-                            <li><a href="#"><i class="fas fa-calendar-check"></i> 場地借用系統</a></li>
-                        </ul>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="news-card">
+                        <div class="news-date">2025/05/28</div>
+                        <h3>校內科學展覽競賽成果</h3>
+                        <p>恭喜本校學生在科展中獲得優異成績...</p>
+                        <a href="#" class="btn btn-outline-primary">詳細內容</a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="news-card">
+                        <div class="news-date">2025/05/27</div>
+                        <h3>國際教育交流活動</h3>
+                        <p>本校與日本姊妹校進行線上教育交流...</p>
+                        <a href="#" class="btn btn-outline-primary">詳細內容</a>
                     </div>
                 </div>
             </div>
@@ -235,5 +207,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom JavaScript -->
     <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/social.js"></script>
 </body>
 </html>

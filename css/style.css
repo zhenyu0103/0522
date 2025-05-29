@@ -214,7 +214,54 @@ footer a:hover {
     text-decoration: none;
 }
 
-/* RWD 響應式設計 */
+/* 認識家齊頁面樣式 */
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.timeline-date {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.timeline-content h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
     .hero-slider,
     .hero-slider img {
@@ -236,4 +283,533 @@ footer a:hover {
     .navbar-brand img {
         height: 40px;
     }
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 0;
+    }
+    
+    .timeline .col-md-6.offset-md-6 {
+        margin-left: 0;
+    }
+    
+    .timeline-item {
+        margin-left: 1rem;
+    }
+}
+
+/* 頁面標題樣式 */
+.bg-primary h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+/* 行事曆頁面樣式 */
+.calendar-filter {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.calendar-filter h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.calendar-filter .form-check {
+    margin-bottom: 0.5rem;
+}
+
+.calendar-filter .form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.calendar-container {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* 行事曆活動樣式 */
+.event-academic {
+    background-color: #4CAF50 !important;
+    border-color: #4CAF50 !important;
+}
+
+.event-student {
+    background-color: #2196F3 !important;
+    border-color: #2196F3 !important;
+}
+
+.event-exam {
+    background-color: #F44336 !important;
+    border-color: #F44336 !important;
+}
+
+.event-special {
+    background-color: #FF9800 !important;
+    border-color: #FF9800 !important;
+}
+
+/* 活動詳情 Modal 樣式 */
+.modal-content {
+    border: none;
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+#eventTitle {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.badge {
+    margin-right: 0.5rem;
+}
+
+/* 行政單位頁面樣式 */
+.department-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.department-header h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.department-header .lead {
+    color: #666;
+}
+
+.unit-card {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e9ecef;
+}
+
+.unit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.unit-card h5 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.unit-card ul li {
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+
+.unit-card i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.department-header i {
+    margin-right: 0.5rem;
+}
+
+/* 校園專區頁面樣式 */
+.zone-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.zone-header h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.zone-header .lead {
+    color: #666;
+}
+
+.service-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.service-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    min-height: 48px;
+}
+
+.service-card .btn {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.service-card .btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* 各專區特色樣式 */
+.student-zone-header .service-icon {
+    background-color: #4CAF50;
+}
+
+.teacher-zone-header .service-icon {
+    background-color: #2196F3;
+}
+
+.parent-zone-header .service-icon {
+    background-color: #FF9800;
+}
+
+/* 升學資訊頁面樣式 */
+.section-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.section-header h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.section-header .lead {
+    color: #666;
+}
+
+/* 升學統計卡片 */
+.stats-card {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.stats-card:hover {
+    transform: translateY(-10px);
+}
+
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.stats-title {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* 升學管道手風琴 */
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.accordion-button:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(0,75,151,0.25);
+}
+
+.accordion-body {
+    background-color: #f8f9fa;
+}
+
+.accordion-body ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.accordion-body ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.accordion-body ul li:before {
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+/* 升學資源卡片 */
+.resource-card {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.resource-card:hover {
+    transform: translateY(-10px);
+}
+
+.resource-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resource-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.resource-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.resource-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    min-height: 48px;
+}
+
+.resource-card .btn {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.resource-card .btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* 國際教育頁面樣式 */
+.exchange-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.exchange-card:hover {
+    transform: translateY(-10px);
+}
+
+.exchange-img {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.exchange-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.exchange-card:hover .exchange-img img {
+    transform: scale(1.1);
+}
+
+.exchange-content {
+    padding: 1.5rem;
+}
+
+.exchange-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.exchange-content p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.exchange-details {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.exchange-details i {
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+}
+
+/* 國際課程卡片 */
+.program-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+}
+
+.program-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.program-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.program-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.program-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.program-list li {
+    padding: 0.5rem 0;
+    color: #666;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.program-list li:before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+/* 國際成果時間軸 */
+.achievement-timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.achievement-timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.timeline-item {
+    margin-left: 2rem;
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px var(--primary-color);
+}
+
+.timeline-content {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.timeline-content h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    margin-bottom: 0;
+    color: #666;
 }
